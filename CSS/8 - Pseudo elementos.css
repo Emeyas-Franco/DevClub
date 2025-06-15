@@ -1,0 +1,42 @@
+/* PSEUDO ELEMENTOS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  border: 1px solid red;
+  color: blue;
+}
+
+input::placeholder {
+  color: #ff1396;
+}
+
+p {
+  color: blue;
+}
+
+p::first-line {
+  color: #ff5555;
+}
+
+p::first-letter {
+  color: red;
+}
+
+a {
+  color: blue;
+}
+
+a::before {
+  content: "OI ";
+  color: red;
+}
+
+a::after {
+  content: " Deu certo";
+  color: red;
+}

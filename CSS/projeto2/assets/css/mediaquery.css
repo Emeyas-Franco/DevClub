@@ -1,0 +1,52 @@
+@media screen and (min-width: 768px) {
+  section {
+    max-width: 65.91%;
+  }
+  h1 {
+    margin: 300px 0 0 136px;
+    font-size: 70px;
+    line-height: 80px;
+    text-align: left;
+  }
+
+  p {
+    font-size: 28px;
+    line-height: 48px;
+    opacity: 0.6;
+    width: 540px;
+    text-align: left;
+    margin: 15px 0 15px 136px;
+    padding: 0;
+  }
+  
+  .btn-section {
+    margin: 0 136px;
+  }
+  aside {
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 34.09%;
+    height: 100vh;
+  }
+  img {
+    position: absolute;
+    left: -22%;
+    top: 225px;
+    width: 380px;
+    height: 469px;
+  }
+
+  a {
+    margin: 24px;
+    font-size: 28px;
+    text-decoration: none;
+    color: #5d5d7d;
+    line-height: 41px;
+  }
+
+  a:hover {
+    opacity: 0.4;
+  }
+}

@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background: #ff1493;
+  border: 10px dashed #0000ff;
+}
