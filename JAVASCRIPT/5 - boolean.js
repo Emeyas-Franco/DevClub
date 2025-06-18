@@ -1,0 +1,4 @@
+// BOOLEAN -> Boleano
+
+false
+true
