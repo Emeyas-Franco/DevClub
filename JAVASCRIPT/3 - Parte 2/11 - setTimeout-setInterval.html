@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>setTimeout & setInterval</title>
+</head>
+<body>
+  <h1>0</h1>
+  <button onclick="stop1()">Stop</button>
+  <button onclick="start()">Start</button>
+</body>
+<script>
+  /*
+      setTimeout -> Executa uma vez
+      setInterval -> Executa infinitas vezes
+        clearInterval -> Pausa o setInterval
+  */
+  // setTimeout(() => {
+  //   // executa o que estiver aqui
+  // }, timeout);
+
+  // setTimeout(function() {
+  //   alert("Executei")
+  //   //executa o que estiver aqui
+  // }, 5000) // 1000 milisegundos => 1 segundo
+
+  // function myFunction() {
+  //   //executa o que estiver aqui
+  // }
+  // setTimeout(myFunction, timeout);
+  // setInterval(() => {
+  //   //executa o que estiver aqui
+  // }, 1000);
+  let number = 0
+  let count
+  const h1 = document.querySelector("h1")
+  function start () {
+    count = setInterval(function() {
+      number++
+      h1.innerHTML = number
+    }, 1000)
+  }
+
+  function stop1() {
+    clearInterval(count)
+  }
+
+</script>
+</html>
