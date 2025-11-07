@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto procurar contato</title>
+</head>
+
+<body>
+  <input id="contactInput" placeholder="Digite o nome do contato">
+  <p id="paragraph"></p>
+  <button class=".buttonSearch" onclick="searchContact()">Procurar Contato</button>
+</body>
+<script>
+
+  const contactInput = document.querySelector("#contactInput");
+  const contactNumber = document.querySelector("p");
+  const searchForContact = document.querySelector(".buttonSearch");
+  const contacts = [
+    { name: "Emeyas", telefone: "(62) 98765-4321" },
+    { name: "Amanda", telefone: "(62) 97865-4132" },
+    { name: "Paula", telefone: "(62) 97786-5325" },
+    { name: "João", telefone: "(62) 95521-7367" },
+    { name: "Thiago", telefone: "(62) 98322-2195" },
+    { name: "Ana", telefone: "(62) 98512-3471" },
+    { name: "Bruno", telefone: "(62) 99873-2564" },
+    { name: "Carla", telefone: "(62) 98742-1935" },
+    { name: "Diego", telefone: "(62) 99654-8723" },
+    { name: "Elisa", telefone: "(62) 98473-1159" },
+    { name: "Fábio", telefone: "(62) 99732-4681" },
+    { name: "Giovana", telefone: "(62) 98824-7513" },
+    { name: "Heitor", telefone: "(62) 99621-8342" },
+    { name: "Isabela", telefone: "(62) 98563-2795" },
+    { name: "João", telefone: "(62) 99914-6820" },
+    { name: "Karen", telefone: "(62) 98452-3197" },
+    { name: "Lucas", telefone: "(62) 99125-7438" },
+    { name: "Marina", telefone: "(62) 98715-6304" },
+    { name: "Nicolas", telefone: "(62) 99864-2039" },
+    { name: "Olívia", telefone: "(62) 98642-9517" },
+    { name: "Pedro", telefone: "(62) 99785-1302" },
+    { name: "Quésia", telefone: "(62) 98371-4528" },
+    { name: "Rafael", telefone: "(62) 99942-6875" },
+    { name: "Sofia", telefone: "(62) 98835-9746" },
+    { name: "Tiago", telefone: "(62) 99413-2684" },
+    { name: "Úrsula", telefone: "(62) 98674-1359" },
+    { name: "Vinícius", telefone: "(62) 99548-2073" },
+    { name: "Wesley", telefone: "(62) 98427-9136" },
+    { name: "Xavier", telefone: "(62) 99732-4689" },
+    { name: "Yara", telefone: "(62) 98325-7910" },
+    { name: "Zeca", telefone: "(62) 99841-2367" },
+    { name: "Lívia", telefone: "(62) 99158-7243" },
+    { name: "Matheus", telefone: "(62) 98764-3901" },
+    { name: "Patrícia", telefone: "(62) 98571-6482" },
+    { name: "Caio", telefone: "(62) 99324-5807" }
+  ];
+  function searchContact() {
+    for (let i = 0; i < contacts.length; i++) {
+      if (contactInput.value.toLowerCase() === contacts[i].name.toLowerCase()) {
+        contactNumber.innerHTML = `Contato encontrado <br><br> <b>Nome: ${contacts[i].name} <br> Telefone: ${contacts[i].telefone}</b>`;
+
+        break
+      } else {
+        contactNumber.innerHTML = "<b>Contato não encontrado</b>"
+      }
+    }
+  }
+
+</script>
+
+</html>
